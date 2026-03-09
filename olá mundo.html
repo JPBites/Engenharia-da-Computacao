@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "pt-br">  <!-- Inicio da página HMTL, tendo predefinido a linguagem em "pt-br"--!>
+	<head> <!-- Inicio da "cabeça" da página, aqui podemos adicionar também o estilo CSS interno <style> ou externo <link> --!>
+		<meta charset = "UTF-8"> <!--	--!>
+		<title> Primeira página </title> <!-- Título que aparece lá em cima na guia--!>
+	</head> <!-- Final da "cabeça"--!>
+	
+	<body> <!-- Inicio do "corpo" da página, onde vai --!>
+		<h1> Começo de tudo </h1> <!-- Cabeçalho maior/principal --!>
+		<p> Olá mundo! </p> <!-- Parágrafo comum--!>
+		<p> Estou começando a entender como funciona o HMTL. </p><br> <!-- Parágrafo seguido de uma quebra de linha --!>
+		
+		<h3>Prencha seus dados</h3> <!-- "Cabeçalho" menor --!>
+		<form> <!--	Inicio de um formulário --!>
+			<label for="nome">Nome:</label><br> <!-- --!>
+			<input type="text" id="nome" name="nome"><br><br>
+		
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email"><br><br>
+		
+			<label for="senha">Senha:</label><br>
+			<input type="password" id="senha" name="senha"><br><br>
+		
+			<label for="estado_civil">Estado Civil:</label><br>
+			<select id="estado_civil" name="estado_civil">
+				<option value="solteiro">Solteiro(a)</option>
+				<option value="casado">Casado(a)</option>
+				<option value="divorciado">Divorciado(a)</option>
+				<option value="viuvo">Viúvo(a)</option>
+			</select><br><br>
+		
+			<label for="sexo">Sexo:</label><br>
+			<input type="radio" id="masculino" name="sexo" value="masculino">
+			<label for="masculino">Masculino</label><br>
+			<input type="radio" id="feminino" name="sexo" value="feminino">
+			<label for="feminino">Feminino</label><br><br>
+			
+			<button type="reset">Limpar</button>
+			<button type="submit">Salvar</button>
+		</form><br><br>
+		
+		<h3>Exercícios:</h3>
+		<ol>
+			<li><br>
+				<ul style="list-style-type: square;">
+					<li>Letra A)</li>
+					<li>Letra B)</li>
+				</ul>
+			</li>
+			<br>
+			<li><br>
+				<ul style="list-style-type: square;">
+					<li>Letra A)</li>
+					<li>Letra B)</li>
+				</ul>
+			</li>
+		</ol><br>
+		
+		<table border=1>
+			<tr><th cowspan="2">Links úteis</th>
+			<tr><td>Para acessar o IFGoiano<a href = "https://www.ifgoiano.edu.br/home/index.php/trindade"> clique aqui!</a></td></tr>
+			<tr><td>Para acessar o Google<a href = "https://www.google.com/"> clique aqui!</a></td></tr>
+			</tr>
+		</table><br>
+	
+		<img src="https://th.bing.com/th/id/OIP.FULMAdTF3SzpT9D0WmYuyQHaCe?w=315&h=116&c=7&r=0&o=7&pid=1.7&rm=3" alt="Logo do IFgoiano">
+
+	</body>
+</html>

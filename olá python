@@ -1,0 +1,64 @@
+print("Olá, qual é o seu nome?") # Pergunta o nome do usuário
+
+nome = input("Digite aqui: ") # Abre espaço para o usuário digitar o nome
+
+print(f"Ah, legal! Olá, {nome}!") # Printa o nome do usuário usando f-string para formatar a mensagem
+print("Agora quero saber sua idade. Quantos anos você tem?") # Pergunta a idade do usuário
+
+idade = int(input("Digite aqui: ")) # Abre espaço para o usuário digitar a idade, convertendo a entrada para inteiro
+print(f"Então você tem {idade} anos, legal {nome}!")
+
+if idade >= 18:
+    print("Você já pode dirigir!")
+else:
+    print("Você ainda não pode dirigir, mas logo logo poderá!")
+
+
+print("Você quer que conta de 1 até sua idade?")
+resposta = input("Tecle 'sim' ou 'não': ")
+if resposta.lower() == "sim":
+    contador = 1
+    while contador <= idade:
+        print(contador)
+        contador += 1
+else:
+    print("Tudo bem...")
+
+print("E que conte ao contrário?")
+resposta = input("Tecle 'sim' ou 'não': ")
+if resposta.lower() == "sim":
+    contador = idade
+    while contador >= 1:
+        print(contador)
+        contador -= 1
+else:
+    print("Tudo bem...")
+
+lista = [nome , idade]
+pergunta = input("Quer ver se eu lembro seu nome ou idade? Digite 'nome' ou 'idade': ")
+if pergunta.lower() == "nome":
+    print(f"Seu nome é {lista[0]}")
+elif pergunta.lower() == "idade":
+    print(f"Sua idade é {lista[1]}")
+else:
+    print("Entrada inválida.")
+   
+input("Pressione Enter para mostrar as letras de a até e")
+letras = ['a', 'b', 'c', 'd', 'e']  
+for letra in letras:
+    print(letra)
+
+input("Pressione Enter para adicionar a letra f")
+letras.append('f')
+for letra in letras:
+    print(letra)
+
+input("Pressione Enter para remover a letra a")
+letras.remove('a')
+for letra in letras:
+    print(letra)
+
+input("Pressione Enter para adicionar letras até o i")
+letras.extend(['g', 'h', 'i'])
+for letra in letras:
+    print(letra)
